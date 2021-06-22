@@ -1,0 +1,4 @@
+pandas==1.2.4
+matplotlib==3.4.2
+ulmo==0.8.6
+streamlit==0.83.0
