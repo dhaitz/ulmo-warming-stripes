@@ -97,4 +97,4 @@ ax.set_xlim(year_start, year_end); # set x axes limits to start and end year
 
 st.write(fig)
 
-st.markdown("Based on [this repo](https://github.com/spestana/ulmo-warming-stripes) by (Steven Pestana)[https://twitter.com/stevenpest], city data from [here](https://github.com/kelvins/US-Cities-Database) by [Kelvin S. do Prado](https://twitter.com/kelvinsprado)")
+st.markdown("Based on [this repo](https://github.com/spestana/ulmo-warming-stripes) by [Steven Pestana](https://twitter.com/stevenpest), city data from [here](https://github.com/kelvins/US-Cities-Database) by [Kelvin S. do Prado](https://twitter.com/kelvinsprado)")
