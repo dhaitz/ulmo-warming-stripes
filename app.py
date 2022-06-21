@@ -15,7 +15,7 @@ from matplotlib.colors import ListedColormap
 import streamlit as st
 
 
-st.set_page_config(page_title="#ShowYourStripes", favicon="🥵")
+st.set_page_config(page_title="#ShowYourStripes", page_icon="🥵")
 
 ################################################################################
 # Get city name / coords data
@@ -48,6 +48,7 @@ def get_met_data(latitude, longitude):
     df_annual = df.resample('Y').mean()
     climate_mean = df_annual.tmean.mean()
     df_annual['anomaly'] = df_annual.tmean - climate_mean
+    df_annual['year'] = df_annual['year'].astype(int)
     return df, df_annual
 
 df, df_annual = get_met_data(latitude, longitude)

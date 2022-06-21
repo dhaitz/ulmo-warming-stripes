@@ -21,7 +21,7 @@ import logging
 import requests
 import pandas as pd
 
-from ulmo import util
+#from ulmo import util
 
 VARIABLES = {"tmax": "maximum temperature",
             "tmin": "minimum temperature",
