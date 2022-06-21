@@ -3,7 +3,8 @@ import pandas as pd
 import numpy as np
 
 # page we'll use to access the data
-import ulmo
+#import ulmo
+import nasa
 
 # packages for plotting
 import matplotlib.pyplot as plt
@@ -38,7 +39,7 @@ longitude = coords['LONGITUDE']
 
 @st.cache
 def get_met_data(latitude, longitude):
-    df = ulmo.nasa.daymet.get_daymet_singlepixel(latitude, longitude, variables=['tmax', 'tmin'], years=None, as_dataframe=True)
+    df = nasa.get_daymet_singlepixel(latitude, longitude, variables=['tmax', 'tmin'], years=None, as_dataframe=True)
 
     df['tmean'] = np.mean([df.tmax, df.tmin], axis=0)
     df_annual = df.resample('Y').mean()
