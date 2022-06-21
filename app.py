@@ -14,6 +14,9 @@ from matplotlib.colors import ListedColormap
 
 import streamlit as st
 
+
+st.set_page_config(page_title="#ShowYourStripes", favicon="🥵")
+
 ################################################################################
 # Get city name / coords data
 ################################################################################
